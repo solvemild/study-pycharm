@@ -1,15 +1,16 @@
-num = [1,2,3]
-print(num)
+#반환값과 입력값이 없는 함수
 
-num.append(4)
-print(num)
+def greeting () :
+    print("안녕하세요.")
+    print("반갑습니다.")
 
-num+=[6]
-print(num)
+#반환값과 입력값이 있는 함수
 
-num.insert(4,5)
-print(num)
+def greeting_2 (a,b) :
+    print(a)
+    print(b)
+    return a+b
 
-next = [7,8]
-num.extend(next)
-print(num)
+bye = greeting_2('안녕하세요','또 만났네요.')
+print(bye)
+
